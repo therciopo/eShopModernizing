@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using System.Web.Http;
 using Microsoft.Owin;
 using Owin;
 
@@ -19,6 +20,8 @@ namespace eShopModernizedMVC
             {
                 app.Use<AuthenticationMiddleware>();
             }
+
+            //var config = GlobalConfiguration.Configuration;
         }
     }
 }
